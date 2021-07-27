@@ -3,12 +3,8 @@ const Schema = mongoose.Schema;
 
 itemSchema = new Schema({
     user: {
-        type: Schema.Types.ObjectId,
+        type: String,
         ref: 'users'
-      },
-      profile:{
-          type: Schema.Types.ObjectId,
-          ref: 'profiles'
       },
     name: {
         type: String,

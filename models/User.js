@@ -11,6 +11,10 @@ const UserSchema = new Schema ({
         type: String,
         require: true
     },
+    avatar:{
+        type:String,
+        default: null
+    },
     email: {
         type: String,
         require: true
@@ -27,9 +31,13 @@ const UserSchema = new Schema ({
         type: String,
         require: true
     },
-    number: {
+    phone: {
         type: String,
         require: true
+    },
+    cart: {
+        type: Array,
+        default: []
     },
     date: {
         type: Date,
